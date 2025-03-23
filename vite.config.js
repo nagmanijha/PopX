@@ -6,9 +6,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react(),
   tailwindcss()],
-  build: {
-    rollupOptions: {
-      external: ["react-router-dom"],
+  resolve: {
+    alias: {
+      // Ensure there are no conflicting aliases
     },
   },
 })
