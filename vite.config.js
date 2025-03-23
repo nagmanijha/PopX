@@ -4,11 +4,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),
-  tailwindcss()],
-  resolve: {
-    alias: {
-      // Ensure there are no conflicting aliases
-    },
-  },
-})
+  plugins: [react()],
+  base: '/', // Ensure this is correct for your project
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  }
+});
