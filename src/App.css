@@ -1,0 +1,196 @@
+/* Add mobile-first responsive styles */
+@import "tailwindcss";
+
+.container {
+  padding: 2rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 30px; /* Adjust spacing between Yes and No */
+  align-items: center;
+}
+
+.toggle-item {
+  display: flex;
+  flex-direction: row; /* Keeps Yes and No on the same line */
+  align-items: center;
+  cursor: pointer;
+}
+
+.outer-circle {
+  width: 20px; /* Smaller outer circle size */
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px; /* Space between circle and label */
+}
+
+.inner-circle {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: width 0.3s, height 0.3s; /* Smooth animation */
+}
+
+.inner-circle.filled {
+  width: 10px; /* Smaller inner circle size */
+  height: 10px;
+  background-color: purple;
+}
+
+.toggle-label {
+  font-size: 14px;
+  color: black;
+}
+
+.toggle-item.active .toggle-label {
+  color: purple; /* Highlight active label */
+}
+
+/* Container styles */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red; /* Red color for required star */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Toggle group styles */
+.toggle-group {
+  display: flex;
+  gap: 30px; /* Space between Yes and No */
+  align-items: center;
+}
+
+.toggle-item {
+  display: flex;
+  flex-direction: row; /* Align Yes and No next to their circles */
+  align-items: center;
+  cursor: pointer;
+}
+
+.outer-circle {
+  width: 20px; /* Smaller outer circle size */
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.inner-circle {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: width 0.3s, height 0.3s;
+}
+
+.inner-circle.filled {
+  width: 10px;
+  height: 10px;
+  background-color: purple; /* Concentric circle filled color */
+}
+
+.toggle-label {
+  font-size: 14px;
+  color: black;
+}
+
+.toggle-item.active .toggle-label {
+  color: purple; /* Highlight active label */
+}
+
+/* Button styles */
+.create-account-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-account-button:hover {
+  background-color: #5a0cad;
+}
+
+/* Add more styles for other components */
